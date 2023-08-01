@@ -1,6 +1,18 @@
 {
   "name": "glamour-server2",
   "version": "1.0.0",
+   "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
